@@ -13,7 +13,8 @@ const sequelize = new Sequelize(process.env.CONNECTION_STRING, {
 module.exports = {
     getStage: (req, res) => {
         sequelize.query(`select * from tdf
-        where stage = 1;`)
+        where stage = "1";`)
+        console.log(res.data)
             .then(dbRes => res.status(200).send(dbRes[0]))
             .catch(err => console.log(err))
     },

@@ -5,16 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tour De France History Checker</title>
+    <link rel="stylesheet" href="index.css">
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
 </head>
 <body>
-    <header><h1>Tour Defrance History Checker</h1></header>
+    
+    <header><h1>Tour de France Stage Checker</h1></header>
+    <div class="images">
+    <img src="./images/tourlogoimage.png" alt="tour logo" class="small-image">   
+    <img src="./images/tourdefrancemain.jpg" alt="Cycling Image" class="main-image">
+    <img src="./images/yellowjersey.png" class="small-image" alt="yellow jersey">
+    <img src="./images/greenJersey.png" class="small-image" alt="green jersey">
+    <img src="./images/polkadotjersey.png" class="small-image" alt="polkadot jersey">
+    <img src="./images/whitejersey.png" class="small-image" alt="white jersey">
+    </div>
+    <div class="flex-container">
     <form >
-        <input type="text" name="stage" id="">
+        <label for="stage" class="rider-form">Enter Stage</label>
+        <input type="text" name="stage" id="" class="rider-form">
+        <label for="year">Enter Year</label>
         <input type="text" name="year" id="">
+        <label for="rider">Enter Rider</label>
         <input type="text" name="rider" id="">
         <button type="submit">Submit</button>
     </form>
-    <div class="flex-container"></div>
+    
+        <h1>Results will go Here</h1>
+    </div>
     <footer><h3>Footer</h3></footer>
 </body>
 </html>
