@@ -12,7 +12,7 @@ app.use(express.json())
 app.use(cors())
 app.use(express.static('public'))
 
-app.get('/stage', getStage);
+app.get('/api/stage/', getStage);
 
 
 app.listen(SERVER_PORT, () => console.log(`up on ${SERVER_PORT}`))

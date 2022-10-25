@@ -1,7 +1,8 @@
 const Sequelize = require('sequelize');
 require('dotenv').config();
+const {CONNECTION_STRING} = process.env;
 
-const sequelize = new Sequelize(process.env.CONNECTION_STRING, {
+const sequelize = new Sequelize(CONNECTION_STRING, {
     dialect: 'postgres',
     dialectOptions: {
         ssl: {
@@ -12,8 +13,9 @@ const sequelize = new Sequelize(process.env.CONNECTION_STRING, {
 
 module.exports = {
     getStage: (req, res) => {
-        sequelize.query(`select * from tdf
-        where stage = "1";`)
+        //const stage = req.params.stage;
+        //const year = req.params.year;
+        sequelize.query(`select * from tdf;`)
         console.log(res.data)
             .then(dbRes => res.status(200).send(dbRes[0]))
             .catch(err => console.log(err))
