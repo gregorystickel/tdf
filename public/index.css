@@ -47,16 +47,16 @@ header {
 }
 
 .main-image {
-  width: 275px;
-  height: 175px;
+  width: 20%;
+  height: 15%;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
 .side-image {
-  width: 275px;
-  height: 175px;
+  width: 20%;
+  height: 15%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -65,6 +65,11 @@ header {
 .small-image {
   height: 80px;
   width: 80px;
+}
+
+.footer-image {
+  height: 50px;
+  width: 50px;
 }
 
 .images {
@@ -98,7 +103,7 @@ footer {
   position: fixed;
   left: 0;
   bottom: 0;
-  height: 10%;
+  height: 6%;
 }
 
 li {
