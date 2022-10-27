@@ -1,73 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tour De France History Checker</title>
-    <link rel="stylesheet" href="index.css">
-    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
-</head>
-<body>
-    
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header><h1>Tour de France Stage Database</h1></header>
     <!--<div class="leftColumn"></div>-->
     <div class="images">
-    <img src="./images/tourlogoimage.png" alt="tour logo" class="small-image">   
-    <img src="./images/tourdefrancemain.jpg" alt="Cycling Image" class="main-image">
-    <img src="./images/tourlogoimage.png" alt="tour logo" class="small-image">
+      <img
+        src="./images/tourlogoimage.png"
+        alt="tour logo"
+        class="small-image"
+      />
+      <img src="./images/header1.jpg" alt="Cycling Image" class="side-image" />
+      <img
+        src="./images/tourdefrancemain.jpg"
+        alt="Cycling Image"
+        class="main-image"
+      />
+      <img src="./images/header2.jpg" alt="Cycling Image" class="side-image" />
+      <img
+        src="./images/tourlogoimage.png"
+        alt="tour logo"
+        class="small-image"
+      />
+    </div>
+    <div class="topnav">
+      <a class="active" href="https://www.letour.fr/en/" target="_blank"
+        >Offical Website</a
+      >
+      <a
+        href="https://www.theproscloset.com/blogs/news/tour-de-france-beginners-guide?g_keywordid=dsa-365621543715&g_adgroupid=126744252882&g_acctid=228-971-4576&g_campaign=US+-+Search+-+Dynamic+-+Blog+-+Purchase&g_network=g&g_keyword=&g_adtype=search&g_campaignid=13983753781&g_adid=535065062116&utm_source=google&utm_medium=cpc&utm_campaign=13983753781&utm_term=&gclid=CjwKCAjw2OiaBhBSEiwAh2ZSP3YbOimU2bsVucsgq9GOlsmwJdWP10s5lAPGjq4T2T1CYqbOpbpGUhoCAW8QAvD_BwE"
+        target="_blank"
+        >TDF Guide</a
+      >
+      <a
+        href="https://www.independent.co.uk/topic/tour-de-france"
+        target="_blank"
+        >News</a
+      >
     </div>
     <div class="flex-container">
-    <form >
+      <form autocomplete="on" class="forms">
         <p>Enter Stage and Year to add to list for Info</p>
         <label for="stage" class="rider-form">Enter Stage</label>
-        <input type="text" placeholder="Enter Stage"name="stage" id="stage" class="rider-form">
+        <input
+          type="text"
+          placeholder="Enter Stage"
+          name="stage"
+          id="stage"
+          class="rider-form"
+        />
         <label for="year">Enter Year</label>
-        <input type="text" placeholder="Enter Year" name="year" id="year">
+        <input type="text" placeholder="Enter Year" name="year" id="year" />
         <button type="submit" id="submitStage">Submit</button>
-    </form>
-    <section >
-        <button class="open-button" onclick="openForm()">Enter New Info</button>
-    </section>
-    <div class="form-popup" id="myForm">
-        <form action="/action_page.php" class="form-container">
-          <h1>Login</h1>
-      
+      </form>
+      <section>
+        <button class="open-button" onclick="openEntryForm()">
+          Enter New Info
+        </button>
+        <button class="open-button" onclick="openDeleteForm()">
+          Delete Info
+        </button>
+      </section>
+      <div class="form-popup" id="enterData">
+        <form class="form-container">
+          <h1>Enter New Info</h1>
+
           <label for="stage"><b>Stage</b></label>
-          <input type="text" placeholder="Enter Stage" name="Stage" required>
-      
-          <label for="year"><b>Year</b></label>
-          <input type="text" placeholder="Enter Year" name="year" required>
-      
-          <label for="year"><b>Winner</b></label>
-          <input type="text" placeholder="Enter Winner" name="winner" required>
+          <input
+            type="text"
+            placeholder="Enter Stage"
+            name="Stage"
+            id="enterStage"
+            required
+          />
 
           <label for="year"><b>Year</b></label>
-          <input type="text" placeholder="Enter Year" name="year" required>
+          <input
+            type="text"
+            placeholder="Enter Year"
+            name="year"
+            id="enterYear"
+            required
+          />
 
-          <button type="submit" class="btn">Submit</button>
-          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          <label for="distance"><b>Distance</b></label>
+          <input
+            type="text"
+            placeholder="Enter Distance"
+            name="distance"
+            id="enterDistance"
+            required
+          />
+
+          <label for="origin"><b>Orign City</b></label>
+          <input
+            type="text"
+            placeholder="Enter Origin City"
+            name="origin"
+            id="enterOrigin"
+            required
+          />
+
+          <label for="destination"><b>Destination</b></label>
+          <input
+            type="text"
+            placeholder="Enter Destination City"
+            name="destination"
+            id="enterDestination"
+            required
+          />
+
+          <label for="type"><b>Type</b></label>
+          <input
+            type="text"
+            placeholder="Enter Stage Type"
+            name="type"
+            id="enterType"
+            required
+          />
+
+          <label for="winner"><b>Winner</b></label>
+          <input
+            type="text"
+            placeholder="Enter Winner"
+            name="winner"
+            id="enterWinner"
+            required
+          />
+
+          <label for="country"><b>Country</b></label>
+          <input
+            type="text"
+            placeholder="Enter Country"
+            name="country"
+            id="enterCountry"
+            required
+          />
+
+          <button type="submit" class="btn" id="enterNewData">Submit</button>
+          <button type="button" class="btn cancel" onclick="closeEntryForm()">
+            Close
+          </button>
         </form>
       </div>
-    <form >
+      <div class="form-popup" id="deleteDataForm">
+        <form class="form-container">
+          <h1>Delete Record</h1>
+
+          <label for="stage"><b>Stage</b></label>
+          <input
+            type="text"
+            placeholder="Enter Stage"
+            name="Stage"
+            id="deleteStage"
+            required
+          />
+
+          <label for="year"><b>Year</b></label>
+          <input
+            type="text"
+            placeholder="Enter Year"
+            name="year"
+            id="deleteYear"
+            required
+          />
+
+          <button type="submit" class="btn" id="deleteData">Submit</button>
+          <button type="button" class="btn cancel" onclick="closeDeleteForm()">
+            Close
+          </button>
+        </form>
+      </div>
+      <form autocomplete="on" class="forms">
         <p>Enter Rider to see all stages won</p>
         <label for="year">Enter Rider</label>
-        <input type="text" placeholder="Enter Rider"name="rider" id="rider">
+        <input type="text" placeholder="Enter Rider" name="rider" id="rider" />
         <button type="submit" id="submitRider">Submit</button>
-    </form>
+      </form>
     </div>
-    <div >
-      
-    <ul id="results"></ul>    
-    
+    <div>
+      <ul id="results"></ul>
     </div>
     <footer>
-    <img src="./images/yellowjersey.png" class="small-image" alt="yellow jersey">
-    <img src="./images/greenJersey.png" class="small-image" alt="green jersey">
-    <img src="./images/polkadotjersey.png" class="small-image" alt="polkadot jersey">
-    <img src="./images/whitejersey.png" class="small-image" alt="white jersey">
+      <img
+        src="./images/yellowjersey.png"
+        class="small-image"
+        alt="yellow jersey"
+      />
+      <img
+        src="./images/greenJersey.png"
+        class="small-image"
+        alt="green jersey"
+      />
+      <img
+        src="./images/polkadotjersey.png"
+        class="small-image"
+        alt="polkadot jersey"
+      />
+      <img
+        src="./images/whitejersey.png"
+        class="small-image"
+        alt="white jersey"
+      />
     </footer>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./index.js"></script>
-</body>
+  </body>
 </html>
