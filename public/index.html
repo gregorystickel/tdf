@@ -10,28 +10,64 @@
 </head>
 <body>
     
-    <header><h1>Tour de France Stage Checker</h1></header>
+    <header><h1>Tour de France Stage Database</h1></header>
+    <!--<div class="leftColumn"></div>-->
     <div class="images">
     <img src="./images/tourlogoimage.png" alt="tour logo" class="small-image">   
     <img src="./images/tourdefrancemain.jpg" alt="Cycling Image" class="main-image">
+    <img src="./images/tourlogoimage.png" alt="tour logo" class="small-image">
+    </div>
+    <div class="flex-container">
+    <form >
+        <p>Enter Stage and Year to add to list for Info</p>
+        <label for="stage" class="rider-form">Enter Stage</label>
+        <input type="text" placeholder="Enter Stage"name="stage" id="stage" class="rider-form">
+        <label for="year">Enter Year</label>
+        <input type="text" placeholder="Enter Year" name="year" id="year">
+        <button type="submit" id="submitStage">Submit</button>
+    </form>
+    <section >
+        <button class="open-button" onclick="openForm()">Enter New Info</button>
+    </section>
+    <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+          <h1>Login</h1>
+      
+          <label for="stage"><b>Stage</b></label>
+          <input type="text" placeholder="Enter Stage" name="Stage" required>
+      
+          <label for="year"><b>Year</b></label>
+          <input type="text" placeholder="Enter Year" name="year" required>
+      
+          <label for="year"><b>Winner</b></label>
+          <input type="text" placeholder="Enter Winner" name="winner" required>
+
+          <label for="year"><b>Year</b></label>
+          <input type="text" placeholder="Enter Year" name="year" required>
+
+          <button type="submit" class="btn">Submit</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+    <form >
+        <p>Enter Rider to see all stages won</p>
+        <label for="year">Enter Rider</label>
+        <input type="text" placeholder="Enter Rider"name="rider" id="rider">
+        <button type="submit" id="submitRider">Submit</button>
+    </form>
+    </div>
+    <div >
+      
+    <ul id="results"></ul>    
+    
+    </div>
+    <footer>
     <img src="./images/yellowjersey.png" class="small-image" alt="yellow jersey">
     <img src="./images/greenJersey.png" class="small-image" alt="green jersey">
     <img src="./images/polkadotjersey.png" class="small-image" alt="polkadot jersey">
     <img src="./images/whitejersey.png" class="small-image" alt="white jersey">
-    </div>
-    <div class="flex-container">
-    <form >
-        <label for="stage" class="rider-form">Enter Stage</label>
-        <input type="text" name="stage" id="" class="rider-form">
-        <label for="year">Enter Year</label>
-        <input type="text" name="year" id="">
-        <label for="rider">Enter Rider</label>
-        <input type="text" name="rider" id="">
-        <button type="submit">Submit</button>
-    </form>
-    
-        <h1>Results will go Here</h1>
-    </div>
-    <footer><h3>Footer</h3></footer>
+    </footer>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>
