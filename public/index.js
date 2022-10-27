@@ -9,6 +9,7 @@ function createStageCard(stage, year) {
     })
     .then(function (response) {
       console.log(response.data);
+      if (response.data.length !== 0) {
       let { origin, stage, type, winner, winner_country, year } =
         response.data[0];
       console.log(origin, stage, type, winner, winner_country, year);
@@ -20,6 +21,10 @@ function createStageCard(stage, year) {
       const results = document.querySelector("ul");
       div.appendChild(deleteBtn);
       results.appendChild(div);
+      console.log(response.data.length)
+      } else {
+        alert("No Records Found")
+      }
     })
     .catch(function (error) {
       console.error(error);
@@ -37,6 +42,7 @@ function createRiderCard(rider) {
   axios
     .get("http://localhost:4000/api/rider", { params: { rider: rider } })
     .then(function (response) {
+       
       console.log(response.data.length);
       for (let i = 0; i < response.data.length; i++) {
         let { origin, stage, type, winner, winner_country, year } =
@@ -50,7 +56,11 @@ function createRiderCard(rider) {
         const results = document.querySelector("ul");
         div.appendChild(deleteBtn);
         results.appendChild(div);
+          
       }
+      if (response.data.length == 0) {
+        alert('No Records Found') } 
+        
     })
     .catch(function (error) {
       console.error(error);
@@ -100,23 +110,23 @@ function deleteData(
     stage,
     year
 ) {
-    console.log("Delete Data button clicked!");
-    console.log(
-      stage,
-      year
-    );
     axios
       .delete("http://localhost:4000/api/data", { data: {
         stage: stage,
         year: year
          }   
       })
+      
       .then(function (response) {
-        alert("Data Deleted Successfully");
+        console.log(response.body)
+        if (response.data.length == 0) {
+            alert('No Records Found') 
+        }  
       })
       .catch(function (error) {
         console.error(error);
       });
+      
 }
 
 function openEntryForm() {
