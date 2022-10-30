@@ -1,17 +1,52 @@
-const Sequelize = require("sequelize");
+const {Sequelize, Model, DataTypes} = require("sequelize");
 require("dotenv").config();
 const { CONNECTION_STRING } = process.env;
 
 const sequelize = new Sequelize(CONNECTION_STRING, {
   dialect: "postgres",
   dialectOptions: {
-    ssl: {
-      rejectUnauthorized: false,
+    "ssl": {
+      "require": true, 
+      "rejectUnauthorized": false
     },
   },
 });
 
+sequelize.authenticate().then(() => {
+  console.log('Connection has been established successfully.');
+}).catch((error) => {
+  console.error('Unable to connect to the database: ', error);
+});
+
+
+const tdf = sequelize.define("tdf", 
+  { 
+   id: {
+      type: DataTypes.INTEGER,
+      primaryKey: true,
+      autoIncrement: true,
+   },
+   stage: DataTypes.STRING,
+   year: DataTypes.INTEGER,
+   distance: DataTypes.DECIMAL,
+   origin: DataTypes.STRING,
+   destination: DataTypes.STRING,
+   type: DataTypes.STRING,
+   winner: DataTypes.STRING,
+   winner_country: DataTypes.STRING
+  },
+  {
+    // options
+    sequelize,
+    tableName: 'tdf',
+    timestamps: false
+  }
+);
+
+ 
+
 module.exports = {
+   
   getStage: (req, res) => {
     console.log(req.query);
     const stage = req.query.stage;
@@ -75,4 +110,30 @@ module.exports = {
        .then((dbRes) => res.status(200).send(dbRes[0]))
        .catch((err) => console.log(err));
   },
-};
+
+  findRecord: async (req, res) => {
+    
+  let year = 2060;  
+  let stage
+  let result = await tdf.findOne({ where: { year: `${year}`}})
+  // let result =  tdf.create ({  
+  //     stage: "2",
+  //     year: 2060,
+  //     distance: 100,
+  //     origin: "test",
+  //     destination: "test",
+  //     type: "Mountain",
+  //     winner: "Tadej Pogacar",
+  //     winner_country: "SVL"
+  // })
+    .then((result) => {
+      console.log(result);
+      return "Normal Return";
+    })
+    .catch((error)=> {
+     console.error('Unable to connect to the database: ', error);
+    });
+    
+  // })
+}
+}

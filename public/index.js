@@ -1,5 +1,3 @@
-//const axios = require("axios");
-
 function createStageCard(stage, year) {
   console.log("button clicked!");
   console.log(stage, year);
@@ -10,20 +8,20 @@ function createStageCard(stage, year) {
     .then(function (response) {
       console.log(response.data);
       if (response.data.length !== 0) {
-      let { origin, stage, type, winner, winner_country, year } =
-        response.data[0];
-      console.log(origin, stage, type, winner, winner_country, year);
-      let div = document.createElement("li");
-      div.innerHTML = `Year: ${year}<br>Stage: ${stage}<br>Rider name: ${winner}<br>Location: ${origin}<br>Type: ${type}<br>Country: ${winner_country}`;
-      const deleteBtn = document.createElement("button");
-      deleteBtn.textContent = "Delete";
-      deleteBtn.addEventListener("click", deleteCard);
-      const results = document.querySelector("ul");
-      div.appendChild(deleteBtn);
-      results.appendChild(div);
-      console.log(response.data.length)
+        let { origin, stage, type, winner, winner_country, year } =
+          response.data[0];
+        console.log(origin, stage, type, winner, winner_country, year);
+        let div = document.createElement("li");
+        div.innerHTML = `Year: ${year}<br>Stage: ${stage}<br>Rider name: ${winner}<br>Location: ${origin}<br>Type: ${type}<br>Country: ${winner_country}`;
+        const deleteBtn = document.createElement("button");
+        deleteBtn.textContent = "Delete";
+        deleteBtn.addEventListener("click", deleteCard);
+        const results = document.querySelector("ul");
+        div.appendChild(deleteBtn);
+        results.appendChild(div);
+        console.log(response.data.length);
       } else {
-        alert("No Records Found")
+        alert("No Records Found");
       }
     })
     .catch(function (error) {
@@ -42,7 +40,6 @@ function createRiderCard(rider) {
   axios
     .get("http://localhost:4000/api/rider", { params: { rider: rider } })
     .then(function (response) {
-       
       console.log(response.data.length);
       for (let i = 0; i < response.data.length; i++) {
         let { origin, stage, type, winner, winner_country, year } =
@@ -56,11 +53,10 @@ function createRiderCard(rider) {
         const results = document.querySelector("ul");
         div.appendChild(deleteBtn);
         results.appendChild(div);
-          
       }
       if (response.data.length == 0) {
-        alert('No Records Found') } 
-        
+        alert("No Records Found");
+      }
     })
     .catch(function (error) {
       console.error(error);
@@ -106,27 +102,29 @@ function createNewData(
       console.error(error);
     });
 }
-function deleteData(
-    stage,
-    year
-) {
+function deleteData(stage, year) {
+  if (
+    document.getElementById("deleteStage").value.length === 0 ||
+    document.getElementById("deleteYear").value.length === 0
+  ) {
+    alert("There is an empty field!");
+  } else {
     axios
-      .delete("http://localhost:4000/api/data", { data: {
-        stage: stage,
-        year: year
-         }   
+      .delete("http://localhost:4000/api/data", {
+        data: {
+          stage: stage,
+          year: year,
+        },
       })
-      
+
       .then(function (response) {
-        console.log(response.body)
-        if (response.data.length == 0) {
-            alert('No Records Found') 
-        }  
+        console.log(response);
       })
       .catch(function (error) {
         console.error(error);
+        alert("No Records Found");
       });
-      
+  }
 }
 
 function openEntryForm() {
@@ -148,7 +146,7 @@ function closeDeleteForm() {
 let submitStage = document.getElementById("submitStage");
 let submitRider = document.getElementById("submitRider");
 let submitNewData = document.getElementById("enterNewData");
-let submitDeleteData = document.getElementById("deleteData")
+let submitDeleteData = document.getElementById("deleteData");
 
 submitStage.addEventListener("click", function () {
   event.preventDefault();
@@ -163,21 +161,34 @@ submitRider.addEventListener("click", function () {
 });
 submitNewData.addEventListener("click", function () {
   event.preventDefault();
-  createNewData(
-    document.getElementById("enterStage").value,
-    document.getElementById("enterYear").value,
-    document.getElementById("enterDistance").value,
-    document.getElementById("enterOrigin").value,
-    document.getElementById("enterDestination").value,
-    document.getElementById("enterType").value,
-    document.getElementById("enterWinner").value,
-    document.getElementById("enterCountry").value
-  );
+  if (
+    document.getElementById("enterStage").value.length == 0 ||
+    document.getElementById("enterYear").value.length == 0 ||
+    document.getElementById("enterDistance").value.length == 0 ||
+    document.getElementById("enterOrigin").value.length == 0 ||
+    document.getElementById("enterDestination").value.length == 0 ||
+    document.getElementById("enterType").value.length == 0 ||
+    document.getElementById("enterWinner").value.length == 0 ||
+    document.getElementById("enterCountry").value.length == 0
+  ) {
+    alert("There is an empty field!");
+  } else {
+    createNewData(
+      document.getElementById("enterStage").value,
+      document.getElementById("enterYear").value,
+      document.getElementById("enterDistance").value,
+      document.getElementById("enterOrigin").value,
+      document.getElementById("enterDestination").value,
+      document.getElementById("enterType").value,
+      document.getElementById("enterWinner").value,
+      document.getElementById("enterCountry").value
+    );
+  }
 });
 submitDeleteData.addEventListener("click", function () {
-    event.preventDefault();
-    deleteData(
-      document.getElementById("deleteStage").value,
-      document.getElementById("deleteYear").value,
-    );
-  });
+  event.preventDefault();
+  deleteData(
+    document.getElementById("deleteStage").value,
+    document.getElementById("deleteYear").value
+  );
+});

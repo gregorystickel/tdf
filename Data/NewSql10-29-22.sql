@@ -1,6 +1,5 @@
 CREATE TABLE tdf(
-  id SERIAL PRIMARY KEY
-  ,Stage          VARCHAR(3) NOT NULL 
+   Stage          VARCHAR(3) NOT NULL PRIMARY KEY
   ,Year           INTEGER  NOT NULL
   ,Distance       NUMERIC(6,3) NOT NULL
   ,Origin         VARCHAR(31) NOT NULL
@@ -61,7 +60,7 @@ INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Countr
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('8',2015,181.5,'Rennes','Mur-de-Bretagne','Flat stage','Alexis Vuillermoz','FRA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('9',2015,28,'Vannes','Plumelec','Team time trial','BMC Racing Team',NULL);
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('10',2015,167,'Tarbes','La Pierre Saint-Martin','High mountain stage','Chris Froome','GBR');
-INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('11',2015,188,'Pau','Cauterets','High mountain stage','Rafał Majka','POL');
+INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('11',2015,188,'Pau','Cauterets','High mountain stage','Rafal Majka','POL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('12',2015,195,'Lannemezan','Plateau de Beille','High mountain stage','Joaquim Rodriguez','ESP');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('13',2015,198.5,'Muret','Rodez','Medium mountain stage','Greg Van Avermaet','BEL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('14',2015,178.5,'Rodez','Mende','Medium mountain stage','Steve Cummings','GBR');
@@ -85,18 +84,18 @@ INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Countr
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('11',2014,187.5,'Besancon','Oyonnax','Medium mountain stage','Tony Gallopin','FRA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('12',2014,185.5,'Bourg-en-Bresse','Saint-Etienne','Flat stage','Alexander Kristoff','NOR');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('13',2014,197.5,'Saint-Etienne','Chamrousse','High mountain stage','Vincenzo Nibali','ITA');
-INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('14',2014,177,'Grenoble','Risoul','High mountain stage','Rafał Majka','POL');
+INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('14',2014,177,'Grenoble','Risoul','High mountain stage','Rafal Majka','POL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('15',2014,222,'Tallard','Nimes','Flat stage','Alexander Kristoff','NOR');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('16',2014,237.5,'Carcassonne','Bagneres-de-Luchon','High mountain stage','Michael Rogers','AUS');
-INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('17',2014,124.5,'Saint-Gaudens','Saint-Lary Pla d’Adet','High mountain stage','Rafał Majka','POL');
+INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('17',2014,124.5,'Saint-Gaudens','Saint-Lary Pla d''Adet','High mountain stage','Rafal Majka','POL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('18',2014,145.5,'Pau','Hautacam','High mountain stage','Vincenzo Nibali','ITA');
-INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('19',2014,208.5,'Maubourguet Pays du Val d’Adour','Bergerac','Flat stage','Ramunas Navardauskas','LTU');
+INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('19',2014,208.5,'Maubourguet Pays du Val d''Adour','Bergerac','Flat stage','Ramunas Navardauskas','LTU');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('20',2014,54,'Bergerac','Perigueux','Individual time trial','Tony Martin','GER');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('21',2014,137.5,'Evry','Paris','Flat stage','Marcel Kittel','GER');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('1',2013,213,'Porto-Vecchio','Bastia','Flat stage','Marcel Kittel','GER');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('2',2013,156,'Bastia','Ajaccio','Medium mountain stage','Jan Bakelants','BEL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('3',2013,145.5,'Ajaccio','Calvi','Medium mountain stage','Simon Gerrans','AUS');
-INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('4',2013,25,'Nice','Nice','Team time trial','Orica–GreenEDGE',NULL);
+INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('4',2013,25,'Nice','Nice','Team time trial','Orica-GreenEDGE',NULL);
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('5',2013,228.5,'Cagnes-sur-Mer','Marseille','Flat stage','Mark Cavendish','GBR');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('6',2013,176.5,'Aix-en-Provence','Montpellier','Flat stage','Andre Greipel','GER');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('7',2013,205.5,'Montpellier','Albi','Flat stage','Peter Sagan','SVK');
@@ -136,7 +135,7 @@ INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Countr
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('19',2012,53.5,'Bonneval','Chartres','Individual time trial','Bradley Wiggins','GBR');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('20',2012,120,'Rambouillet','Paris','Flat stage','Mark Cavendish','GBR');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('1',2011,191.5,'Passage du Gois','Mont des Alouettes','Flat stage','Philippe Gilbert','BEL');
-INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('2',2011,23,'Les Essarts','Les Essarts','Team time trial','Garmin–Cervelo',NULL);
+INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('2',2011,23,'Les Essarts','Les Essarts','Team time trial','Garmin-Cervelo',NULL);
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('3',2011,198,'Olonne-sur-Mer','Redon','Flat stage','Tyler Farrar','USA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('4',2011,172.5,'Lorient','Mur-de-Bretagne','Flat stage','Cadel Evans','AUS');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('5',2011,164.5,'Carhaix','Cap Frehel','Flat stage','Mark Cavendish','GBR');
@@ -188,7 +187,7 @@ INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Countr
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('9',2009,160.5,'Saint-Gaudens','Tarbes','Mountain stage','Pierrick Fedrigo','FRA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('10',2009,194.5,'Limoges','Issoudun','Flat stage','Mark Cavendish','GBR');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('11',2009,192,'Vatan','Saint-Fargeau','Flat stage','Mark Cavendish','GBR');
-INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('12',2009,211.5,'Tonnerre','Vittel','Flat stage','Nicki Sørensen','DEN');
+INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('12',2009,211.5,'Tonnerre','Vittel','Flat stage','Nicki Sorensen','DEN');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('13',2009,200,'Vittel','Colmar','Medium mountain stage','Heinrich Haussler','GER');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('14',2009,199,'Colmar','Besancon','Flat stage','Sergei Ivanov','RUS');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('15',2009,207.5,'Pontarlier','Verbier','Mountain Stage','Alberto Contador','ESP');
@@ -235,7 +234,7 @@ INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Countr
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('13',2007,54,'Albi','Albi','Individual time trial','Cadel Evans[n 1]','AUS');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('14',2007,197,'Mazamet','Plateau-de-Beille','Mountain stage','Alberto Contador','ESP');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('15',2007,196,'Foix','Loudenvielle','Mountain stage','Kim Kirchen[n 1]','LUX');
-INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('16',2007,218.5,'Orthez','Gourette–Col d''Aubisque','Mountain stage','Michael Rasmussen','DEN');
+INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('16',2007,218.5,'Orthez','Gourette-Col d''Aubisque','Mountain stage','Michael Rasmussen','DEN');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('17',2007,188.5,'Pau','Castelsarrasin','Intermediate stage','Daniele Bennati','ITA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('18',2007,211,'Cahors','Angouleme','Plain stage','Sandy Casar','FRA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('19',2007,55.5,'Cognac','Angouleme','Individual time trial','Levi Leipheimer','USA');
@@ -328,7 +327,7 @@ INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Countr
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('1',2002,192.5,'Luxembourg City','Luxembourg City','Plain stage','Rubens Bertogliati','SUI');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('2',2002,181,'Luxembourg City','Saarbrucken','Plain stage','Oscar Freire','ESP');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('3',2002,174.5,'Metz','Reims','Plain stage','Robbie McEwen','AUS');
-INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('4',2002,67.5,'Epernay','Chateau-Thierry','Team time trial','ONCE–Eroski',NULL);
+INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('4',2002,67.5,'Epernay','Chateau-Thierry','Team time trial','ONCE-Eroski',NULL);
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('5',2002,195,'Soissons','Rouen','Plain stage','Jaan Kirsipuu','EST');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('6',2002,199.5,'Forges-les-Eaux','Alencon','Plain stage','Erik Zabel','GER');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('7',2002,176,'Bagnoles-de-l''Orne','Avranches','Plain stage','Bradley McGee','AUS');
@@ -369,7 +368,7 @@ INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Countr
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('1',2000,16.5,'Futuroscope','Futuroscope','Individual time trial','David Millar','GBR');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('2',2000,194,'Futuroscope','Loudun','Plain stage','Tom Steels','BEL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('3',2000,161.5,'Loudun','Nantes','Plain stage','Tom Steels','BEL');
-INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('4',2000,70,'Nantes','Saint-Nazaire','Team time trial','ONCE–Deutsche Bank',NULL);
+INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('4',2000,70,'Nantes','Saint-Nazaire','Team time trial','ONCE-Deutsche Bank',NULL);
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('5',2000,202,'Vannes','Vitre','Plain stage','Marcel Wust','GER');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('6',2000,198.5,'Vitre','Tours','Plain stage','Leon van Bon','NED');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('7',2000,205.5,'Tours','Limoges','Plain stage','Christophe Agnolutto','FRA');
@@ -425,7 +424,7 @@ INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Countr
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('14',1998,186.5,'Valreas','Grenoble','Hilly stage','Stuart O''Grady','AUS');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('15',1998,189,'Grenoble','Les Deux Alpes','Stage with mountain(s)','Marco Pantani','ITA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('16',1998,204,'Vizille','Albertville','Stage with mountain(s)','Jan Ullrich','GER');
-INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('17',1998,149,'Albertville','Aix-les-Bains','Stage with mountain(s)','—',NULL);
+INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('17',1998,149,'Albertville','Aix-les-Bains','Stage with mountain(s)','-',NULL);
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('18',1998,218.5,'Aix-les-Bains','Neuchatel','Hilly stage','Tom Steels','BEL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('19',1998,242,'La Chaux-de-Fonds','Autun','Plain stage','Magnus Backstedt','SWE');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('20',1998,52,'Montceau-les-Mines','Le Creusot','Individual time trial','Jan Ullrich','GER');
@@ -465,7 +464,7 @@ INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Countr
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('10',1996,208.5,'Turin','Gap','Hilly stage','Erik Zabel','GER');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('11',1996,202,'Gap','Valence','Hilly stage','Jose Jaime Gonzalez','COL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('12',1996,143.5,'Valence','Le Puy-en-Velay','Hilly stage','Pascal Richard','SUI');
-INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('13',1996,177,'Le Puy-en-Velay','Super Besse','Hilly stage','Rolf Sørensen','DEN');
+INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('13',1996,177,'Le Puy-en-Velay','Super Besse','Hilly stage','Rolf Sorensen','DEN');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('14',1996,186.5,'Besse','Tulle','Hilly stage','Djamolidine Abduzhaparov','UZB');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('15',1996,176,'Brive-la-Gaillarde','Villeneuve-sur-Lot','Plain stage','Massimo Podenzana','ITA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('16',1996,199,'Agen','Hautacam','Stage with mountain(s)','Bjarne Riis','DEN');
@@ -477,7 +476,7 @@ INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Countr
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('P',1995,7.3,'Saint-Brieuc','Saint-Brieuc','Individual time trial','Jacky Durand','FRA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('1',1995,233.5,'Dinan','Lannion','Plain stage','Fabio Baldato','ITA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('2',1995,235.5,'Perros-Guirec','Vitre','Plain stage','Mario Cipollini','ITA');
-INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('3',1995,67,'Mayenne','Alencon','Team time trial','Gewiss–Ballan',NULL);
+INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('3',1995,67,'Mayenne','Alencon','Team time trial','Gewiss-Ballan',NULL);
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('4',1995,162,'Alencon','Le Havre','Plain stage','Mario Cipollini','ITA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('5',1995,261,'Fecamp','Dunkirk','Plain stage','Jeroen Blijlevens','NED');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('6',1995,202,'Dunkirk','Charleroi','Plain stage','Erik Zabel','GER');
@@ -498,7 +497,7 @@ INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Countr
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('P',1994,7.2,'Lille','Lille','Individual time trial','Chris Boardman','GBR');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('1',1994,234,'Lille','Armentieres','Plain stage','Djamolidine Abdoujaparov','UZB');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('2',1994,203.5,'Roubaix','Boulogne-sur-Mer','Plain stage','Jean-Paul van Poppel','NED');
-INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('3',1994,66.5,'Calais','Eurotunnel','Team time trial','GB–MG Maglificio',NULL);
+INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('3',1994,66.5,'Calais','Eurotunnel','Team time trial','GB-MG Maglificio',NULL);
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('4',1994,204.5,'Dover','Brighton','Plain stage','Francisco Cabello','ESP');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('5',1994,187,'Portsmouth','Portsmouth','Plain stage','Nicola Minali','ITA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('6',1994,270.5,'Cherbourg','Rennes','Plain stage','Gianluca Bortolami','ITA');
@@ -509,7 +508,7 @@ INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Countr
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('11',1994,263.5,'Cahors','Hautacam','Stage with mountain(s)','Luc Leblanc','FRA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('12',1994,204.5,'Lourdes','Luz Ardiden','Stage with mountain(s)','Richard Virenque','FRA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('13',1994,223,'Bagneres-de-Bigorre','Albi','Plain stage','Bjarne Riis','DEN');
-INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('14',1994,202,'Castres','Montpellier','Plain stage','Rolf Sørensen','DEN');
+INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('14',1994,202,'Castres','Montpellier','Plain stage','Rolf Sorensen','DEN');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('15',1994,231,'Montpellier','Carpentras','Stage with mountain(s)','Eros Poli','ITA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('16',1994,224.5,'Valreas','Alpe d''Huez','Stage with mountain(s)','Roberto Conti','ITA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('17',1994,149,'Le Bourg-d''Oisans','Val Thorens','Stage with mountain(s)','Nelson Rodriguez','COL');
@@ -521,7 +520,7 @@ INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Countr
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('1',1993,215,'Lucon','Les Sables-d''Olonne','Plain stage','Mario Cipollini','ITA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('2',1993,227.5,'Les Sables-d''Olonne','Vannes','Plain stage','Wilfried Nelissen','BEL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('3',1993,189.5,'Vannes','Dinard','Plain stage','Djamolidine Abdoujaparov','UZB');
-INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('4',1993,81,'Dinard','Avranches','Team time trial','GB–MG Maglificio',NULL);
+INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('4',1993,81,'Dinard','Avranches','Team time trial','GB-MG Maglificio',NULL);
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('5',1993,225.5,'Avranches','Evreux','Plain stage','Jesper Skibby','DEN');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('6',1993,158,'Evreux','Amiens','Plain stage','Johan Bruyneel','BEL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('7',1993,199,'Peronne','Chalons-sur-Marne','Plain stage','Bjarne Riis','DEN');
@@ -533,7 +532,7 @@ INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Countr
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('13',1993,181.5,'Marseille','Montpellier','Plain stage','Olaf Ludwig','GER');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('14',1993,223,'Montpellier','Perpignan','Plain stage','Pascal Lino','FRA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('15',1993,231.5,'Perpignan','Pal','Stage with mountain(s)','Oliverio Rincon','COL');
-INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('16',1993,230,'Andorra','Saint-Lary-Soulan Pla d''Adet','Stage with mountain(s)','Zenon Jaskuła','POL');
+INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('16',1993,230,'Andorra','Saint-Lary-Soulan Pla d''Adet','Stage with mountain(s)','Zenon Jaskula','POL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('17',1993,190,'Tarbes','Pau','Stage with mountain(s)','Claudio Chiappucci','ITA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('18',1993,199.5,'Orthez','Bordeaux','Plain stage','Djamolidine Abdoujaparov','UZB');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('19',1993,48,'Bretigny-sur-Orge','Montlhery','Individual time trial','Toni Rominger','SUI');
@@ -542,7 +541,7 @@ INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Countr
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('1',1992,194.5,'San Sebastian','San Sebastian','Hilly stage','Dominique Arnould','FRA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('2',1992,255,'San Sebastian','Pau','Hilly stage','Javier Murguialday','ESP');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('3',1992,210,'Pau','Bordeaux','Plain stage','Rob Harmeling','NED');
-INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('4',1992,63.5,'Libourne','Libourne','Team time trial','Panasonic–Sportlife',NULL);
+INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('4',1992,63.5,'Libourne','Libourne','Team time trial','Panasonic-Sportlife',NULL);
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('5',1992,196,'Nogent-sur-Oise','Wasquehal','Plain stage','Guido Bontempi','ITA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('6',1992,167,'Roubaix','Brussels','Plain stage','Laurent Jalabert','FRA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('7',1992,196.5,'Brussels','Valkenburg','Plain stage','Gilles Delion','FRA');
@@ -585,7 +584,7 @@ INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Countr
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('22',1991,178,'Melun','Paris','Plain stage','Dmitri Konychev','URS');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('P',1990,6.3,'Futuroscope','Futuroscope','Individual time trial','Thierry Marie','FRA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('1',1990,138.5,'Futuroscope','Futuroscope','Plain stage','Frans Maassen','NED');
-INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('2',1990,44.5,'Futuroscope','Futuroscope','Team time trial','Panasonic–Sportlife',NULL);
+INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('2',1990,44.5,'Futuroscope','Futuroscope','Team time trial','Panasonic-Sportlife',NULL);
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('3',1990,233,'Poitiers','Nantes','Plain stage','Moreno Argentin','ITA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('4',1990,203,'Nantes','Mont Saint-Michel','Plain stage','Johan Museeuw','BEL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('5',1990,301,'Avranches','Rouen','Plain stage','Gerrit Solleveld','NED');
@@ -607,7 +606,7 @@ INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Countr
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('21',1990,182.5,'Bretigny-sur-Orge','Paris','Plain stage','Johan Museeuw','BEL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('P',1989,7.8,'Luxembourg City','Luxembourg City','Individual time trial','Erik Breukink','NED');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('1',1989,135.5,'Luxembourg City','Luxembourg City','Plain stage','Acacio da Silva','POR');
-INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('2',1989,46,'Luxembourg City','Luxembourg City','Team time trial','Super U–Raleigh–Fiat',NULL);
+INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('2',1989,46,'Luxembourg City','Luxembourg City','Team time trial','Super U-Raleigh-Fiat',NULL);
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('3',1989,241,'Luxembourg City','Spa','Plain stage','Raul Alcala','MEX');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('4',1989,255,'Liege','Wasquehal','Flat cobblestone stage','Jelle Nijdam','NED');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('5',1989,73,'Dinard','Rennes','Individual time trial','Greg LeMond','USA');
@@ -629,7 +628,7 @@ INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Countr
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('21',1989,24.5,'Versailles','Paris','Individual time trial','Greg LeMond','USA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('P',1988,1,'Pornichet','La Baule','Individual time trial','Guido Bontempi','ITA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('1',1988,92,'Pontchateau','Machecoul','Plain stage','Steve Bauer','CAN');
-INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('2',1988,48,'La Haie-Fouassiere','Ancenis','Team time trial','Panasonic–Isostar–Colnago–Agu',NULL);
+INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('2',1988,48,'La Haie-Fouassiere','Ancenis','Team time trial','Panasonic-Isostar-Colnago-Agu',NULL);
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('3',1988,213,'Nantes','Le Mans','Plain stage','Jean-Paul van Poppel','NED');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('4',1988,158,'Le Mans','Evreux','Plain stage','Acacio da Silva','POR');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('5',1988,148,'Neufchatel-en-Bray','Lievin','Plain stage','Jelle Nijdam','NED');
@@ -652,7 +651,7 @@ INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Countr
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('22',1988,173,'Nemours','Paris','Plain stage','Jean-Paul van Poppel','NED');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('P',1987,6,'West Berlin','West Berlin','Individual time trial','Jelle Nijdam','NED');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('1',1987,105,'West Berlin','West Berlin','Plain stage','Nico Verhoeven','NED');
-INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('2',1987,41,'West Berlin','West Berlin','Team time trial','Carrera Jeans–Vagabond',NULL);
+INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('2',1987,41,'West Berlin','West Berlin','Team time trial','Carrera Jeans-Vagabond',NULL);
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('3',1987,219,'Karlsruhe','Stuttgart','Plain stage','Acacio da Silva','POR');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('4',1987,79,'Stuttgart','Pforzheim','Plain stage','Herman Frison','BEL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('5',1987,112,'Pforzheim','Strasbourg','Plain stage','Marc Sergeant','BEL');
@@ -710,7 +709,7 @@ INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Countr
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('7',1985,217,'Reims','Nancy','Plain stage','Ludwig Wijnants','BEL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('8',1985,75,'Sarrebourg','Strasbourg','Individual time trial','Bernard Hinault','FRA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('9',1985,174,'Strasbourg','Epinal','Hilly stage','Maarten Ducrot','NED');
-INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('10',1985,204,'Epinal','Pontarlier','Hilly stage','Jørgen V. Pedersen','DEN');
+INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('10',1985,204,'Epinal','Pontarlier','Hilly stage','Jorgen V. Pedersen','DEN');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('11',1985,195,'Pontarlier','Morzine Avoriaz','Stage with mountain(s)','Luis Herrera','COL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('12',1985,269,'Morzine Avoriaz','Lans-en-Vercors','Stage with mountain(s)','Fabio Parra','COL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('13',1985,32,'Villard-de-Lans','Villard-de-Lans','Individual time trial','Eric Vanderaerden','BEL');
@@ -727,7 +726,7 @@ INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Countr
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('P',1984,5,'Montreuil','Noisy-le-Sec','Individual time trial','Bernard Hinault','FRA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('1',1984,149,'Bondy','Saint-Denis','Plain stage','Frank Hoste','BEL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('2',1984,249,'Bobigny','Louvroil','Plain stage','Marc Madiot','FRA');
-INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('3',1984,51,'Louvroil','Valenciennes','Team time trial','Renault–Elf',NULL);
+INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('3',1984,51,'Louvroil','Valenciennes','Team time trial','Renault-Elf',NULL);
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('4',1984,83,'Valenciennes','Bethune','Plain stage','Ferdi Van Den Haute','BEL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('5',1984,207,'Bethune','Cergy-Pontoise','Plain stage','Paulo Ferreira','POR');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('6',1984,202,'Cergy-Pontoise','Alencon','Plain stage','Frank Hoste','BEL');
@@ -750,7 +749,7 @@ INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Countr
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('23',1984,197,'Pantin','Paris','Hilly stage','Eric Vanderaerden','BEL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('P',1983,6,'Fontenay-sous-Bois','Fontenay-sous-Bois','Individual time trial','Eric Vanderaerden','BEL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('1',1983,163,'Nogent-sur-Marne','Creteil','Plain stage','Frits Pirard','NED');
-INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('2',1983,100,'Soissons','Fontaine-au-Pire','Team time trial','COOP–Mercier–Mavic',NULL);
+INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('2',1983,100,'Soissons','Fontaine-au-Pire','Team time trial','COOP-Mercier-Mavic',NULL);
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('3',1983,152,'Valenciennes','Roubaix','Hilly stage','Rudy Matthijs','BEL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('4',1983,300,'Roubaix','Le Havre','Plain stage','Serge Demierre','SUI');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('5',1983,257,'Le Havre','Le Mans','Plain stage','Dominique Gaigne','FRA');
@@ -780,7 +779,7 @@ INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Countr
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('6',1982,233,'Lille','Lille','Plain stage','Jan Raas','NED');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('7',1982,235,'Cancale','Concarneau','Plain stage','Pol Verschuere','BEL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('8',1982,201,'Concarneau','Chateaulin','Plain stage','Frank Hoste','BEL');
-INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('9a',1982,69,'Lorient','Plumelec','Team time trial','Renault–Elf–Gitane',NULL);
+INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('9a',1982,69,'Lorient','Plumelec','Team time trial','Renault-Elf-Gitane',NULL);
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('9b',1982,138,'Plumelec','Nantes','Plain stage','Stefan Mutter','SUI');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('10',1982,147,'Saintes','Bordeaux','Plain stage','Pierre-Raymond Villemiane','FRA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('11',1982,57,'Valence d''Agen','Valence d''Agen','Individual time trial','Gerrie Knetemann','NED');
@@ -796,10 +795,10 @@ INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Countr
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('21',1982,187,'Fontenay-sous-Bois','Paris','Plain stage','Bernard Hinault','FRA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('P',1981,6,'Nice','Nice','Individual time trial','Bernard Hinault','FRA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('1a',1981,97,'Nice','Nice','Hilly stage','Freddy Maertens','BEL');
-INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('1b',1981,40,'Nice','Nice','Team time trial','TI–Raleigh–Creda[11]',NULL);
+INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('1b',1981,40,'Nice','Nice','Team time trial','TI-Raleigh-Creda[11]',NULL);
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('2',1981,254,'Nice','Martigues','Plain stage','Johan van der Velde','NED');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('3',1981,232,'Martigues','Narbonne','Plain stage','Freddy Maertens','BEL');
-INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('4',1981,77,'Narbonne','Carcassonne','Team time trial','TI–Raleigh–Creda',NULL);
+INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('4',1981,77,'Narbonne','Carcassonne','Team time trial','TI-Raleigh-Creda',NULL);
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('5',1981,117,'Saint-Gaudens','Pla d''Adet','Stage with mountain(s)','Lucien Van Impe','BEL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('6',1981,27,'Nay','Pau','Individual time trial','Bernard Hinault','FRA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('7',1981,227,'Pau','Bordeaux','Plain stage','Urs Freuler','SUI');
@@ -821,13 +820,13 @@ INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Countr
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('22',1981,187,'Fontenay-sous-Bois','Paris','Plain stage','Freddy Maertens','BEL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('P',1980,8,'Frankfurt','Frankfurt','Individual time trial','Bernard Hinault','FRA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('1a',1980,133,'Frankfurt','Wiesbaden','Plain stage','Jan Raas','NED');
-INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('1b',1980,46,'Wiesbaden','Frankfurt','Team time trial','TI–Raleigh–Creda',NULL);
+INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('1b',1980,46,'Wiesbaden','Frankfurt','Team time trial','TI-Raleigh-Creda',NULL);
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('2',1980,276,'Frankfurt','Metz','Plain stage','Rudy Pevenage','BEL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('3',1980,282,'Metz','Liege','Plain stage','Henk Lubberding','NED');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('4',1980,35,'Spa','Spa','Individual time trial','Bernard Hinault','FRA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('5',1980,249,'Liege','Lille','Plain stage','Bernard Hinault','FRA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('6',1980,216,'Lille','Compiegne','Plain stage','Jean-Louis Gauthier','FRA');
-INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('7a',1980,65,'Compiegne','Beauvais','Team time trial','TI–Raleigh–Creda',NULL);
+INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('7a',1980,65,'Compiegne','Beauvais','Team time trial','TI-Raleigh-Creda',NULL);
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('7b',1980,92,'Beauvais','Rouen','Plain stage','Jan Raas','NED');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('8',1980,164,'Flers','Saint-Malo','Plain stage','Bert Oosterbosch','NED');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('9',1980,205,'Saint-Malo','Nantes','Plain stage','Jan Raas','NED');
@@ -848,11 +847,11 @@ INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Countr
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('1',1979,225,'Fleurance','Luchon','Stage with mountain(s)','Rene Bittinger','FRA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('2',1979,24,'Luchon','Superbagneres','Individual time trial','Bernard Hinault','FRA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('3',1979,180,'Luchon','Pau','Stage with mountain(s)','Bernard Hinault','FRA');
-INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('4',1979,87,'Captieux','Bordeaux','Team time trial','TI–Raleigh–McGregor',NULL);
+INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('4',1979,87,'Captieux','Bordeaux','Team time trial','TI-Raleigh-McGregor',NULL);
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('5',1979,145,'Neuville-de-Poitou','Angers','Plain stage','Jan Raas','NED');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('6',1979,239,'Angers','Saint-Brieuc','Plain stage','Jos Jacobs','BEL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('7',1979,158,'Saint-Hilaire-du-Harcouet','Deauville','Plain stage','Leo van Vliet','NED');
-INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('8',1979,90,'Deauville','Le Havre','Team time trial','TI–Raleigh–McGregor',NULL);
+INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('8',1979,90,'Deauville','Le Havre','Team time trial','TI-Raleigh-McGregor',NULL);
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('9',1979,201,'Amiens','Roubaix','Plain stage','Ludo Delcroix','BEL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('10',1979,124,'Roubaix','Brussels','Plain stage','Jo Maas','NED');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('11',1979,33,'Brussels','Brussels','Individual time trial','Bernard Hinault','FRA');
@@ -874,7 +873,7 @@ INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Countr
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('1b',1978,100,'Sint Willebrord','Brussels','Plain stage','Walter Planckaert','BEL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('2',1978,199,'Brussels','Saint-Amand-les-Eaux','Plain stage','Jacques Esclassan','FRA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('3',1978,244,'Saint-Amand-les-Eaux','Saint-Germain-en-Laye','Plain stage','Klaus-Peter Thaler','GER');
-INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('4',1978,153,'Evreux','Caen','Team time trial','TI–Raleigh–McGregor',NULL);
+INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('4',1978,153,'Evreux','Caen','Team time trial','TI-Raleigh-McGregor',NULL);
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('5',1978,244,'Caen','Maze-Montgeoffroy','Plain stage','Freddy Maertens','BEL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('6',1978,162,'Maze-Montgeoffroy','Poitiers','Plain stage','Sean Kelly','IRE');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('7',1978,242,'Poitiers','Bordeaux','Plain stage','Freddy Maertens','BEL');
@@ -927,7 +926,7 @@ INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Countr
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('2',1976,237,'Angers','Caen','Flat Stage','Giovanni Battaglin','ITA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('3',1976,37,'Le Touquet-Paris-Plage','Le Touquet-Paris-Plage','Individual time trial','Freddy Maertens','BEL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('4',1976,258,'Le Touquet-Paris-Plage','Bornem','Flat Stage','Hennie Kuiper','NED');
-INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('5a',1976,4,'Leuven','Leuven','Team time trial','TI–Raleigh–Campagnolo',NULL);
+INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('5a',1976,4,'Leuven','Leuven','Team time trial','TI-Raleigh-Campagnolo',NULL);
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('5b',1976,144,'Leuven','Verviers','Half Stage','Miguel-Maria Lasa','ESP');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('6',1976,209,'Bastogne','Nancy','Flat Stage','Aldo Parecchini','ITA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('7',1976,206,'Nancy','Mulhouse','Flat Stage','Freddy Maertens','BEL');
@@ -1004,7 +1003,7 @@ INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Countr
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('P',1973,7.1,'Scheveningen','Scheveningen','Individual time trial','Joop Zoetemelk','NED');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('1a',1973,84,'Scheveningen','Rotterdam','Plain stage','Willy Teirlinck','BEL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('1b',1973,137.5,'Rotterdam','Sint-Niklaas','Plain stage','Jose Catieau','FRA');
-INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('2a',1973,12.4,'Sint-Niklaas','Sint-Niklaas','Team time trial','Watney–Maes Pils',NULL);
+INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('2a',1973,12.4,'Sint-Niklaas','Sint-Niklaas','Team time trial','Watney-Maes Pils',NULL);
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('2b',1973,138,'Sint-Niklaas','Roubaix','Plain stage','Eddy Verstraeten','BEL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('3',1973,226,'Roubaix','Reims','Plain stage','Cyrille Guimard','FRA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('4',1973,214,'Reims','Nancy','Plain stage','Joop Zoetemelk','NED');
@@ -1048,7 +1047,7 @@ INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Countr
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('14b',1972,151,'Valloire','Aix-les-Bains','Stage with mountain(s)','Cyrille Guimard','FRA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('15',1972,28,'Aix-les-Bains','Le Revard','Stage with mountain(s)','Cyrille Guimard','FRA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('16',1972,198.5,'Aix-les-Bains','Pontarlier','Hilly stage','Willy Teirlinck','BEL');
-INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('17',1972,213,'Pontarlier','Ballon d’Alsace','Hilly stage','Bernard Thevenet','FRA');
+INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('17',1972,213,'Pontarlier','Ballon d''Alsace','Hilly stage','Bernard Thevenet','FRA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('18',1972,257.5,'Vesoul','Auxerre','Plain stage','Marinus Wagtmans','NED');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('19',1972,230,'Auxerre','Versailles','Plain stage','Joseph Bruyere','BEL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('20a',1972,42,'Versailles','Versailles','Individual time trial','Eddy Merckx','BEL');
@@ -1081,7 +1080,7 @@ INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Countr
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('P',1970,7.4,'Limoges','Limoges','Individual time trial','Eddy Merckx','BEL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('1',1970,224.5,'Limoges','La Rochelle','Plain stage','Cyrille Guimard','FRA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('2',1970,200,'La Rochelle','Angers','Plain stage','Italo Zilioli','ITA');
-INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('3a',1970,10.7,'Angers','Angers','Team time trial','Faemino–Faema',NULL);
+INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('3a',1970,10.7,'Angers','Angers','Team time trial','Faemino-Faema',NULL);
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('3b',1970,140,'Angers','Rennes','Plain stage','Marino Basso','ITA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('4',1970,229,'Rennes','Lisieux','Plain stage','Walter Godefroot','BEL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('5a',1970,94.5,'Lisieux','Rouen','Plain stage','Walter Godefroot','BEL');
@@ -1114,7 +1113,7 @@ INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Countr
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('3',1969,213,'Maastricht','Charleville-Mezieres','Plain stage','Eric Leman','BEL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('4',1969,214,'Charleville-Mezieres','Nancy','Plain stage','Rik Van Looy','BEL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('5',1969,194,'Nancy','Mulhouse','Stage with mountain(s)','Joaquim Agostinho','POR');
-INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('6',1969,133,'Mulhouse','Ballon d’Alsace','Stage with mountain(s)','Eddy Merckx','BEL');
+INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('6',1969,133,'Mulhouse','Ballon d''Alsace','Stage with mountain(s)','Eddy Merckx','BEL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('7',1969,241,'Belfort','Divonne-les-Bains','Stage with mountain(s)','Mariano Diaz','ESP');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('8a',1969,9,'Divonne-les-Bains','Divonne-les-Bains','Individual time trial','Eddy Merckx','BEL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('8b',1969,137,'Divonne-les-Bains','Thonon-les-Bains','Stage with mountain(s)','Michele Dancelli','ITA');
@@ -1168,7 +1167,7 @@ INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Countr
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('5b',1967,17,'Jambes','Jambes','Team time trial','Belgium',NULL);
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('6',1967,238,'Jambes','Metz','Plain stage','Herman Van Springel','BEL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('7',1967,205.5,'Metz','Strasbourg','Stage with mountain(s)','Michael Wright','GBR');
-INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('8',1967,215,'Strasbourg','Belfort/Ballon d’Alsace','Stage with mountain(s)','Lucien Aimar','FRA');
+INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('8',1967,215,'Strasbourg','Belfort/Ballon d''Alsace','Stage with mountain(s)','Lucien Aimar','FRA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('9',1967,238.5,'Belfort','Divonne-les-Bains','Stage with mountain(s)','Guido Reybrouck','BEL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('10',1967,243,'Divonne-les-Bains','Briancon','Stage with mountain(s)','Felice Gimondi','ITA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('11',1967,197,'Briancon','Digne','Stage with mountain(s)','Jose Samyn','FRA');
@@ -1186,7 +1185,7 @@ INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Countr
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('22b',1967,46.6,'Versailles','Paris','Individual time trial','Raymond Poulidor','FRA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('1',1966,209,'Nancy','Charleville','Plain stage','Rudi Altig','FRG');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('2',1966,198,'Charleville','Tournai','Plain stage','Guido Reybrouck','BEL');
-INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('3a',1966,21,'Tournai','Tournai','Team time trial','Televizier–Batavus',NULL);
+INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('3a',1966,21,'Tournai','Tournai','Team time trial','Televizier-Batavus',NULL);
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('3b',1966,131,'Tournai','Dunkirk','Plain stage','Gerben Karstens','NED');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('4',1966,205,'Dunkirk','Dieppe','Plain stage','Willy Planckaert','BEL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('5',1966,178,'Dieppe','Caen','Plain stage','Franco Bitossi','ITA');
@@ -1210,7 +1209,7 @@ INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Countr
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('22a',1966,111,'Orleans','Rambouillet','Plain stage','Edward Sels','BEL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('22b',1966,51,'Rambouillet','Paris','Individual time trial','Rudi Altig','FRG');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('1a',1965,149,'Cologne','Liege','Plain stage','Rik Van Looy','BEL');
-INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('1b',1965,22.5,'Liege','Liege','Team time trial','Ford France–Gitane',NULL);
+INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('1b',1965,22.5,'Liege','Liege','Team time trial','Ford France-Gitane',NULL);
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('2',1965,200.5,'Liege','Roubaix','Plain stage','Bernard Van De Kerkhove','BEL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('3',1965,240,'Roubaix','Rouen','Plain stage','Felice Gimondi','ITA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('4',1965,227,'Caen','Saint-Brieuc','Plain stage','Edgard Sorgeloos','BEL');
@@ -1236,7 +1235,7 @@ INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Countr
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('1',1964,215,'Rennes','Lisieux','Plain stage','Edward Sels','BEL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('2',1964,208,'Lisieux','Amiens','Plain stage','Andre Darrigade','FRA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('3a',1964,197,'Amiens','Forest','Plain stage','Bernard Vandekerkhove','BEL');
-INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('3b',1964,21,'Forest','Forest','Team time trial','Kas–Kaskol',NULL);
+INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('3b',1964,21,'Forest','Forest','Team time trial','Kas-Kaskol',NULL);
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('4',1964,292,'Forest','Metz','Plain stage','Rudi Altig','GER');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('5',1964,161,'Luneville','Freiburg','Plain stage','Willy Derboven','BEL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('6',1964,200,'Freiburg','Besancon','Plain stage','Henk Nijdam','NED');
@@ -1260,7 +1259,7 @@ INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Countr
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('22b',1964,27,'Versailles','Paris','Individual time trial','Jacques Anquetil','FRA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('1',1963,152,'Paris','Epernay','Plain stage','Eddy Pauwels','BEL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('2a',1963,186,'Reims','Jambes','Plain stage','Rik Van Looy','BEL');
-INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('2b',1963,22,'Jambes','Jambes','Team time trial','Pelforth–Sauvage–Lejeune',NULL);
+INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('2b',1963,22,'Jambes','Jambes','Team time trial','Pelforth-Sauvage-Lejeune',NULL);
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('3',1963,223,'Jambes','Roubaix','Plain stage','Seamus Elliott','IRL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('4',1963,236,'Roubaix','Rouen','Plain stage','Frans Melckenbeeck','BEL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('5',1963,285,'Rouen','Rennes','Plain stage','Antonio Bailetti','ITA');
@@ -1283,7 +1282,7 @@ INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Countr
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('21',1963,185,'Troyes','Paris','Plain stage','Rik Van Looy','BEL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('1',1962,253,'Nancy','Spa','Plain stage','Rudi Altig','FRG');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('2a',1962,147,'Spa','Herentals','Plain stage','Andre Darrigade','FRA');
-INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('2b',1962,23,'Herentals','Herentals','Team time trial','Faema–Flandria–Clement',NULL);
+INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('2b',1962,23,'Herentals','Herentals','Team time trial','Faema-Flandria-Clement',NULL);
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('3',1962,210,'Brussels','Amiens','Plain stage','Rudi Altig','FRG');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('4',1962,196.5,'Amiens','Le Havre','Plain stage','Willy Vanden Berghen','BEL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('5',1962,215,'Pont l''Eveque','Saint-Malo','Plain stage','Emile Daems','BEL');
@@ -1700,7 +1699,7 @@ INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Countr
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('20a',1938,48,'Reims','Laon','Plain stage','Glauco Servadei','ITA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('20b',1938,42,'Laon','Saint-Quentin','Individual time trial','Felicien Vervaecke','BEL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('20c',1938,107,'Saint-Quentin','Lille','Plain stage','Francois Neuville','BEL');
-INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('21',1938,279,'Lille','Paris','Plain stage','Antonin Magne Andre Leducq[n 2]','c("FRA", "FRA")');
+INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('21',1938,279,'Lille','Paris','Plain stage','Antonin Magne Andre Leducq[n 2]','c("FRA", "FRA")');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('1',1937,263,'Paris','Lille','Plain stage','Jean Majerus','LUX');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('2',1937,192,'Lille','Charleville','Plain stage','Maurice Archambaud','FRA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('3',1937,161,'Charleville','Metz','Plain stage','Walter Generati','ITA');
@@ -1725,7 +1724,7 @@ INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Countr
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('15',1937,194,'Luchon','Pau','Stage with mountain(s)','Julian Berrendero','ESP');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('16',1937,235,'Pau','Bordeaux','Plain stage','Paul Chocque','FRA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('17a',1937,123,'Bordeaux','Royan','Plain stage','Erich Bautz','GER');
-INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('17b',1937,37,'Royan','Saintes','Plain stage','Adolph Braeckeveldt Heinz Wengler[n 3]','c("BEL", "GER")');
+INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('17b',1937,37,'Royan','Saintes','Plain stage','Adolph Braeckeveldt Heinz Wengler[n 3]','c("BEL", "GER")');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('17c',1937,67,'Saintes','La Rochelle','Plain stage','Roger Lapebie','FRA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('18a',1937,82,'La Rochelle','La Roche-sur-Yon','Team time trial','Roger Lapebie','FRA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('18b',1937,172,'La Roche-sur-Yon','Rennes','Plain stage','Paul Chocque','FRA');
@@ -1790,7 +1789,7 @@ INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Countr
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('2',1934,192,'Lille','Charleville','Plain stage','Rene Le Greves','FRA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('3',1934,161,'Charleville','Metz','Plain stage','Roger Lapebie','FRA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('4',1934,220,'Metz','Belfort','Stage with mountain(s)','Roger Lapebie','FRA');
-INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('5',1934,293,'Belfort','Evian','Plain stage','Rene Le Greves  Georges Speicher[n 2]','c("FRA", "FRA")');
+INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('5',1934,293,'Belfort','Evian','Plain stage','Rene Le Greves  Georges Speicher[n 2]','c("FRA", "FRA")');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('6',1934,207,'Evian','Aix-les-Bains','Stage with mountain(s)','Georges Speicher','FRA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('7',1934,229,'Aix-les-Bains','Grenoble','Stage with mountain(s)','Rene Vietto','FRA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('8',1934,102,'Grenoble','Gap','Stage with mountain(s)','Giuseppe Martano','ITA');
@@ -2004,7 +2003,7 @@ INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Countr
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('18',1925,343,'Dunkerque','Paris','Plain stage','Ottavio Bottecchia','ITA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('1',1924,381,'Paris','Le Havre','Plain stage','Ottavio Bottecchia','ITA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('2',1924,371,'Le Havre','Cherbourg','Plain stage','Romain Bellenger','FRA');
-INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('3',1924,405,'Cherbourg','Brest','Plain stage','Philippe Thys  Theophile Beeckman','c("BEL", "BEL")');
+INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('3',1924,405,'Cherbourg','Brest','Plain stage','Philippe Thys  Theophile Beeckman','c("BEL", "BEL")');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('4',1924,412,'Brest','Les Sables-d''Olonne','Plain stage','Felix Goethals','FRA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('5',1924,482,'Les Sables-d''Olonne','Bayonne','Plain stage','Omer Huyse','BEL');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('6',1924,326,'Bayonne','Luchon','Stage with mountain(s)','Ottavio Bottecchia','ITA');
@@ -2196,7 +2195,7 @@ INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Countr
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('13',1908,415,'Brest','Caen','Plain stage','Georges Passerieu','FRA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('14',1908,251,'Caen','Paris','Plain stage','Lucien Petit-Breton','FRA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('1',1907,272,'Paris','Roubaix','Plain stage','Louis Trousselier','FRA');
-INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('2',1907,398,'Roubaix','Metz','Plain stage','Emile Georget[n 2] Louis Trousselier[n 2]','c("FRA", "FRA")');
+INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('2',1907,398,'Roubaix','Metz','Plain stage','Emile Georget[n 2] Louis Trousselier[n 2]','c("FRA", "FRA")');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('3',1907,259,'Metz','Belfort','Stage with mountain(s)','Emile Georget','FRA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('4',1907,309,'Belfort','Lyon','Stage with mountain(s)','Marcel Cadolle','FRA');
 INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('5',1907,311,'Lyon','Grenoble','Stage with mountain(s)','Emile Georget','FRA');
