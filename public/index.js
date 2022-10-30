@@ -1,5 +1,4 @@
 function createStageCard(stage, year) {
-  console.log("button clicked!");
   console.log(stage, year);
   axios
     .get("http://localhost:4000/api/stage", {
@@ -35,7 +34,6 @@ function deleteCard(event) {
 }
 
 function createRiderCard(rider) {
-  console.log("button clicked!");
   console.log(rider);
   axios
     .get("http://localhost:4000/api/rider", { params: { rider: rider } })
