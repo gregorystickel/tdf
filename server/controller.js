@@ -1,4 +1,4 @@
-const { Sequelize, Model, DataTypes } = require("sequelize");
+const { Sequelize, DataTypes } = require("sequelize");
 require("dotenv").config();
 const { CONNECTION_STRING } = process.env;
 
@@ -69,8 +69,54 @@ module.exports = {
       .catch((err) => console.log(err));
   },
 
+  // enterData: (req, res) => {
+  //   console.log(req.body);
+  //   const {
+  //     stage,
+  //     year,
+  //     distance,
+  //     origin,
+  //     destination,
+  //     type,
+  //     winner,
+  //     winner_country,
+  //   } = req.body;
+  //   console.log("Enter Data request received");
+  //   console.log(
+  //     stage,
+  //     year,
+  //     distance,
+  //     origin,
+  //     destination,
+  //     type,
+  //     winner,
+  //     winner_country
+  //   );
+  //   sequelize
+  //     .query(
+  //       `insert into tdf (stage, year, distance, origin, destination, type, winner, winner_country) values ('${stage}',${year},'${distance}','${origin}','${destination}','${type}','${winner}','${winner_country}');`
+  //     )
+  //     .then((dbRes) => res.status(200).send(dbRes[0]))
+  //     .catch((err) => console.log(err));
+  // },
+  
+  deleteRecord: async (req, res) => {
+    const stage = req.body.stage;
+    const year = req.body.year;
+    console.log("got to delete data");
+    const count = await tdf
+      .destroy({
+        where: { year: `${year}`, stage: `${stage}`},
+      })
+      .then((count) => res.status(200).send(JSON.stringify(count, 2)))
+      .catch((error) => {
+        console.error("Unable to connect to the database: ", error);
+      });
+
+    // })
+  },
+
   enterData: (req, res) => {
-    console.log(req.body);
     const {
       stage,
       year,
@@ -92,27 +138,13 @@ module.exports = {
       winner,
       winner_country
     );
-    sequelize
-      .query(
-        `insert into tdf (stage, year, distance, origin, destination, type, winner, winner_country) values ('${stage}',${year},'${distance}','${origin}','${destination}','${type}','${winner}','${winner_country}');`
-      )
-      .then((dbRes) => res.status(200).send(dbRes[0]))
-      .catch((err) => console.log(err));
-  },
-  
-  deleteRecord: async (req, res) => {
-    const stage = req.body.stage;
-    const year = req.body.year;
-    console.log("got to delete data");
-    const count = await tdf
-      .destroy({
-        where: { year: `${year}`, stage: `${stage}` },
-      })
-      .then((count) => res.status(200).send(JSON.stringify(count, 2)))
-      .catch((error) => {
-        console.error("Unable to connect to the database: ", error);
-      });
+      let result = tdf.findOrCreate({
+      where: { year: `${year}`, stage: `${stage}` },
+      defaults: { stage:`${stage}`, year: `${year}`, distance: `${distance}`, origin: `${origin}`, destination: `${destination}`, type: `${type}`, winner: `${winner}`,  winner_country: `${winner_country}`}})
 
-    // })
+      .then((result) => { res.status(200).send(JSON.stringify(result))
+        console.log(result)
+      })
+       .catch((err) => console.log(err));
   },
 };
