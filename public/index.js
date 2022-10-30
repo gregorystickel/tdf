@@ -94,11 +94,11 @@ function createNewData(
       winner_country: winner_country,
     })
     .then(function (response) {
-      console.log(response)
+      console.log(response);
       if (response.data[1] === false) {
-      alert("Data Already Exists!");}
-      else {
-      alert("Data Submitted Successfully")
+        alert("Data Already Exists!");
+      } else {
+        alert("Data Submitted Successfully");
       }
     })
     .catch(function (error) {

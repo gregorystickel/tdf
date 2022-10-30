@@ -8,7 +8,7 @@ const {
   getRider,
   enterData,
   deleteRecord,
-  enterNewData
+  enterNewData,
 } = require("./controller.js");
 const { seed } = require("./seed.js");
 
@@ -22,7 +22,4 @@ app.post("/seed", seed);
 app.post("/api/data/", enterData);
 app.delete("/api/data", deleteRecord);
 
-
 app.listen(SERVER_PORT, () => console.log(`up on ${SERVER_PORT}`));
-
-

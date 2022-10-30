@@ -99,14 +99,14 @@ module.exports = {
   //     .then((dbRes) => res.status(200).send(dbRes[0]))
   //     .catch((err) => console.log(err));
   // },
-  
+
   deleteRecord: async (req, res) => {
     const stage = req.body.stage;
     const year = req.body.year;
     console.log("got to delete data");
     const count = await tdf
       .destroy({
-        where: { year: `${year}`, stage: `${stage}`},
+        where: { year: `${year}`, stage: `${stage}` },
       })
       .then((count) => res.status(200).send(JSON.stringify(count, 2)))
       .catch((error) => {
@@ -138,13 +138,25 @@ module.exports = {
       winner,
       winner_country
     );
-      let result = tdf.findOrCreate({
-      where: { year: `${year}`, stage: `${stage}` },
-      defaults: { stage:`${stage}`, year: `${year}`, distance: `${distance}`, origin: `${origin}`, destination: `${destination}`, type: `${type}`, winner: `${winner}`,  winner_country: `${winner_country}`}})
-
-      .then((result) => { res.status(200).send(JSON.stringify(result))
-        console.log(result)
+    let result = tdf
+      .findOrCreate({
+        where: { year: `${year}`, stage: `${stage}` },
+        defaults: {
+          stage: `${stage}`,
+          year: `${year}`,
+          distance: `${distance}`,
+          origin: `${origin}`,
+          destination: `${destination}`,
+          type: `${type}`,
+          winner: `${winner}`,
+          winner_country: `${winner_country}`,
+        },
       })
-       .catch((err) => console.log(err));
+
+      .then((result) => {
+        res.status(200).send(JSON.stringify(result));
+        console.log(result);
+      })
+      .catch((err) => console.log(err));
   },
 };
