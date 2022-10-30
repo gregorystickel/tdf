@@ -1,21 +1,20 @@
 const Sequelize = require("sequelize");
-require('dotenv').config();
-
-
+require("dotenv").config();
 
 const sequelize = new Sequelize(process.env.CONNECTION_STRING, {
-    dialect: 'postgres',
-    dialectOptions: {
-        ssl: {
-            rejectUnauthorized: false
-        }
-    }
-})
-
+  dialect: "postgres",
+  dialectOptions: {
+    ssl: {
+      rejectUnauthorized: false,
+    },
+  },
+});
 
 module.exports = {
-    seed: (req, res) => {
-        sequelize.query(`
+  seed: (req, res) => {
+    sequelize
+      .query(
+        `
         drop table if exists tdf;
         
         CREATE TABLE tdf(
@@ -2267,14 +2266,12 @@ module.exports = {
           INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('5',1903,425,'Bordeaux','Nantes','Plain stage','Maurice Garin','FRA');
           INSERT INTO tdf(Stage,Year,Distance,Origin,Destination,Type,Winner,Winner_Country) VALUES ('6',1903,471,'Nantes','Paris','Plain stage','Maurice Garin','FRA');
         
-        `).then(() => {
-            console.log('DB seeded!')
-            res.sendStatus(200)
-        }).catch(err => console.log('error seeding DB', err))
-    }
-}
-
-
-
-
-
+        `
+      )
+      .then(() => {
+        console.log("DB seeded!");
+        res.sendStatus(200);
+      })
+      .catch((err) => console.log("error seeding DB", err));
+  },
+};

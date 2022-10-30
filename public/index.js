@@ -119,6 +119,11 @@ function deleteData(stage, year) {
 
       .then(function (response) {
         console.log(response);
+        if (response.data > 0) {
+          alert(`Records Deleted: ${response.data}`);
+        } else {
+          alert("No Records Found");
+        }
       })
       .catch(function (error) {
         console.error(error);
