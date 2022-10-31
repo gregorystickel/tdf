@@ -1,5 +1,2 @@
-const { Model } = require('sequelize');
-module.exports = (sequelize, DataTypes) => {
-  
-  
-};
+const { Model } = require("sequelize");
+module.exports = (sequelize, DataTypes) => {};

@@ -137,6 +137,7 @@ function deleteData(stage, year) {
 
 function openEntryForm() {
   document.getElementById("enterData").style.display = "block";
+  document.getElementById("enterData").scrollIntoView(true);
 }
 
 function closeEntryForm() {
