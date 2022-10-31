@@ -12,31 +12,13 @@
     />
   </head>
   <body>
-    <header><h1>Tour de France Stage Database</h1></header>
-    <!--<div class="leftColumn"></div>-->
-    <div class="images">
-      <img
-        src="./images/tourlogoimage.png"
-        alt="tour logo"
-        class="small-image"
-      />
-      <img src="./images/header1.jpg" alt="Cycling Image" class="side-image" />
-      <img
-        src="./images/tourdefrancemain.jpg"
-        alt="Cycling Image"
-        class="main-image"
-      />
-      <img src="./images/header2.jpg" alt="Cycling Image" class="side-image" />
-      <img
-        src="./images/tourlogoimage.png"
-        alt="tour logo"
-        class="small-image"
-      />
-    </div>
+    <header>
+      <img src="./images/tourflag.jpg" alt="tour logo" class="header-image" />
+      <h1>Tour de France Stage Database</h1>
+      <img src="./images/tourflag.jpg" alt="tour logo" class="header-image" />
+    </header>
     <div class="topnav">
-      <a class="active" href="https://www.letour.fr/en/" target="_blank"
-        >Offical Website</a
-      >
+      <a href="https://www.letour.fr/en/" target="_blank">Offical Website</a>
       <a
         href="https://www.theproscloset.com/blogs/news/tour-de-france-beginners-guide?g_keywordid=dsa-365621543715&g_adgroupid=126744252882&g_acctid=228-971-4576&g_campaign=US+-+Search+-+Dynamic+-+Blog+-+Purchase&g_network=g&g_keyword=&g_adtype=search&g_campaignid=13983753781&g_adid=535065062116&utm_source=google&utm_medium=cpc&utm_campaign=13983753781&utm_term=&gclid=CjwKCAjw2OiaBhBSEiwAh2ZSP3YbOimU2bsVucsgq9GOlsmwJdWP10s5lAPGjq4T2T1CYqbOpbpGUhoCAW8QAvD_BwE"
         target="_blank"
@@ -51,6 +33,64 @@
         >Complete History Wiki</a
       >
     </div>
+    <div class="imagebar-container">
+      <img
+        src="./images/tourlogoimage.png"
+        alt="tour logo"
+        class="small-image"
+      />
+      <img src="./images/header1.jpg" alt="Cycling Image" class="side-image" />
+
+      <div class="slideshow-container">
+        <div class="slide fade">
+          <div class="numbertext">1/5</div>
+          <img src="./images/tourdefrancemain.jpg" class="slideImg" />
+        </div>
+
+        <div class="slide fade">
+          <div class="numbertext">2/5</div>
+          <img src="./images/header1.jpg" class="slideImg" />
+        </div>
+
+        <div class="slide fade">
+          <div class="numbertext">3/5</div>
+          <img src="./images/header2.jpg" class="slideImg" />
+        </div>
+
+        <div class="slide fade">
+          <div class="numbertext">4/5</div>
+          <img src="./images/first-tour-de-france.jpg" class="slideImg" />
+        </div>
+
+        <div class="slide fade">
+          <div class="numbertext">5/5</div>
+          <img src="./images/eddymerckx.jpg" class="slideImg" />
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br />
+      <img
+        src="./images/tourdefrancemain.jpg"
+        alt="Cycling Image"
+        class="main-image"
+      />
+
+      <img
+        src="./images/tourlogoimage.png"
+        alt="tour logo"
+        class="small-image"
+      />
+    </div>
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+
     <div class="flex-container">
       <form autocomplete="on" class="forms">
         <p>Enter Stage and Year to add to list for Info</p>

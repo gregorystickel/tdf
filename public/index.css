@@ -2,7 +2,7 @@ html,
 body {
   width: 100%;
   height: 100%;
-  background-color: #ffcc00;
+  background-color: #ffcc00; 
   background-image: url("/images/background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -10,7 +10,9 @@ body {
 }
 
 header {
+  display: flex;
   text-align: center;
+  justify-content: space-around;
   background-color: black;
   border: 3px solid black;
   color: #ffcc00;
@@ -44,6 +46,7 @@ header {
   flex-direction: row;
   align-items: baseline;
   justify-content: space-between;
+  height: 22%; 
 }
 
 .main-image {
@@ -81,11 +84,11 @@ header {
 form {
   background-color: #555;
   color: white;
-  padding: 16px 20px;
+  padding: 16px 20px; 
   border: none;
   display: flex;
   flex-direction: column;
-  padding: 4vh 3vh;
+  /* padding: 3vh 2vh; */
   justify-content: start;
   align-items: flex-start;
   opacity: 0.9;
@@ -104,6 +107,7 @@ footer {
   left: 0;
   bottom: 0;
   height: 6%;
+  z-index: 1;
 }
 
 li {
@@ -119,6 +123,7 @@ li {
   border-radius: 12px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  z-index: 2;
 }
 
 ul {
@@ -156,4 +161,88 @@ ul {
   bottom: 23px;
   right: 28px;
   width: auto;
+}
+* {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 25%;
+  max-height: 10%;
+  position:relative;
+  margin: auto;
+  
+}
+
+.slide {
+  display: none;
+  
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  height: 100%;
+  top: 0;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.imagebar-container {
+  display: flex;
+  align-self: start;  
+  
+} 
+.slideImg {
+  height: 15%;
+  width: 100%;
 }
