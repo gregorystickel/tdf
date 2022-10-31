@@ -51,6 +51,7 @@ function createRiderCard(rider) {
         const results = document.querySelector("ul");
         div.appendChild(deleteBtn);
         results.appendChild(div);
+        
       }
       if (response.data.length == 0) {
         alert("No Records Found");

@@ -2,10 +2,10 @@ html,
 body {
   width: 100%;
   height: 100%;
-  background-color: #ffcc00; 
+  background-color: #ffcc00;
   background-image: url("/images/background.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   margin: 0%;
 }
 
@@ -33,12 +33,25 @@ header {
 }
 
 .topnav a {
-  text-align: center;
+  /* text-align: center; */
   color: black;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 22px;
   font-family: "Lobster";
+  opacity: 0.5;
+  background-size: 200% 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+.topnav a:hover {
+  color: black;
+  padding: 10px 40px;
+  overflow: hidden;
+  opacity: 0.9;
+  text-decoration: overline underline;
+  /* text-decoration-style:wavy; */
+  text-decoration-color: blue;
 }
 
 .flex-container {
@@ -46,7 +59,7 @@ header {
   flex-direction: row;
   align-items: baseline;
   justify-content: space-between;
-  height: 22%; 
+  height: 22%;
 }
 
 .main-image {
@@ -84,7 +97,7 @@ header {
 form {
   background-color: #555;
   color: white;
-  padding: 16px 20px; 
+  padding: 16px 20px;
   border: none;
   display: flex;
   flex-direction: column;
@@ -162,22 +175,23 @@ ul {
   right: 28px;
   width: auto;
 }
-* {box-sizing:border-box}
+* {
+  box-sizing: border-box;
+}
 
 .slideshow-container {
   max-width: 25%;
   max-height: 10%;
-  position:relative;
+  position: relative;
   margin: auto;
-  
 }
 
 .slide {
   display: none;
-  
 }
 
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -197,8 +211,9 @@ ul {
   border-radius: 3px 0 0 3px;
 }
 
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .numbertext {
@@ -209,7 +224,6 @@ ul {
   height: 100%;
   top: 0;
 }
-
 
 .dot {
   cursor: pointer;
@@ -222,10 +236,10 @@ ul {
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
-
 
 .fade {
   animation-name: fade;
@@ -233,17 +247,19 @@ ul {
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .imagebar-container {
   display: flex;
-  align-self: start;  
-  
-} 
+  align-self: start;
+}
 .slideImg {
   height: 15%;
   width: 100%;
 }
-
