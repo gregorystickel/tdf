@@ -53,27 +53,27 @@ Main Page
 
 Enter Year and Stage to search form one searchFormStageYear 
 
-![Search Form Stage Year Screenshot](https://github.com/gregorystickel/tdf/blob/main/data/screenshots/searchFormStageYear.png)
+![Search Form Stage Year Screenshot](https://github.com/gregorystickel/tdf/blob/main/Data/screenshots/searchFormStageYear.png)
 
 Enter Rider to see all stages won by that rider
 
-![Search Form Rider Screenshot](https://github.com/gregorystickel/tdf/blob/main/data/screenshots/searchFormRider.png)
+![Search Form Rider Screenshot](https://github.com/gregorystickel/tdf/blob/main/Data/screenshots/searchFormRider.png)
 
 Results are displayed with a deleted button to remove searches no longer needed
 
-![Results Screenshot](https://github.com/gregorystickel/tdf/blob/main/data/screenshots/results.png)
+![Results Screenshot](https://github.com/gregorystickel/tdf/blob/main/Data/screenshots/results.png)
 
 There are two buttons to enter new data or deleted data with pop up forms 
 
-![Edit Buttons Screenshot](https://github.com/gregorystickel/tdf/blob/main/data/screenshots/editButtons.png)
+![Edit Buttons Screenshot](https://github.com/gregorystickel/tdf/blob/main/Data/screenshots/editButtons.png)
 
 The Enter data form requires all info to be filled in before it will submit the data
 
-![Enter Data Form  Screenshot](https://github.com/gregorystickel/tdf/blob/main/data/screenshots/enterDataForm.png)
+![Enter Data Form  Screenshot](https://github.com/gregorystickel/tdf/blob/main/Data/screenshots/enterDataForm.png)
 
 The Delete Record form requires stage and year to delete requested record 
 
-![Delete Record Screenshot](https://github.com/gregorystickel/tdf/blob/main/data/screenshots/deleteRecordForm.png)
+![Delete Record Screenshot](https://github.com/gregorystickel/tdf/blob/main/Data/screenshots/deleteRecordForm.png)
 
 
 
