@@ -17,13 +17,15 @@ header {
   border: 3px solid black;
   color: #ffcc00;
   font-family: "Lobster";
-  font-size: 15px;
+  /* font-size: 15px; */
+  font-size: 100%;
   height: 10%;
   width: 100%;
   border-radius: 12px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   opacity: 0.8;
+  
 }
 
 .topnav {
@@ -72,7 +74,7 @@ header {
 
 .side-image {
   width: 20%;
-  height: 15%;
+  height: 12%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -260,6 +262,6 @@ ul {
   align-self: start;
 }
 .slideImg {
-  height: 15%;
+  height: 12%;
   width: 100%;
 }
