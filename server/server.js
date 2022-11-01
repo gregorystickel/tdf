@@ -7,8 +7,7 @@ const {
   getStage,
   getRider,
   enterData,
-  deleteRecord,
-  enterNewData,
+  deleteRecord
 } = require("./controller.js");
 const { seed } = require("./seed.js");
 
