@@ -39,7 +39,6 @@ const tdf = sequelize.define(
     winner_country: DataTypes.STRING,
   },
   {
-    // options
     sequelize,
     tableName: "tdf",
     timestamps: false,
@@ -68,37 +67,6 @@ module.exports = {
       .then((dbRes) => res.status(200).send(dbRes[0]))
       .catch((err) => console.log(err));
   },
-
-  // enterData: (req, res) => {
-  //   console.log(req.body);
-  //   const {
-  //     stage,
-  //     year,
-  //     distance,
-  //     origin,
-  //     destination,
-  //     type,
-  //     winner,
-  //     winner_country,
-  //   } = req.body;
-  //   console.log("Enter Data request received");
-  //   console.log(
-  //     stage,
-  //     year,
-  //     distance,
-  //     origin,
-  //     destination,
-  //     type,
-  //     winner,
-  //     winner_country
-  //   );
-  //   sequelize
-  //     .query(
-  //       `insert into tdf (stage, year, distance, origin, destination, type, winner, winner_country) values ('${stage}',${year},'${distance}','${origin}','${destination}','${type}','${winner}','${winner_country}');`
-  //     )
-  //     .then((dbRes) => res.status(200).send(dbRes[0]))
-  //     .catch((err) => console.log(err));
-  // },
 
   deleteRecord: async (req, res) => {
     const stage = req.body.stage;
