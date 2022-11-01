@@ -49,7 +49,7 @@ Open Browser and go to http://localhost:4000
 
 Main Page
 
-![Main Page Screenshot](/data/screenshots/mainPage.png)
+![Main Page Screenshot](https://github.com/gregorystickel/tdf/raw/main/data/screenshots/mainPage.png)
 
 Enter Year and Stage to search form one searchFormStageYear 
 
