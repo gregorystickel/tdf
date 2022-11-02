@@ -10,11 +10,15 @@ const {
   deleteRecord
 } = require("./controller.js");
 const { seed } = require("./seed.js");
+const {getHTML, getCSS, getJS} = require('./controller')
 
 app.use(express.json());
 app.use(cors());
 app.use(express.static("public"));
 
+app.get('/', getHTML)
+app.get('/css', getCSS)
+app.get('/js', getJS)
 app.get("/api/stage/", getStage);
 app.get("/api/rider/", getRider);
 app.post("/seed", seed);

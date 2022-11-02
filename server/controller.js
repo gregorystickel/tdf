@@ -1,7 +1,7 @@
 const { Sequelize, DataTypes } = require("sequelize");
 require("dotenv").config();
 const { CONNECTION_STRING } = process.env;
-
+const path = require('path')
 const sequelize = new Sequelize(CONNECTION_STRING, {
   dialect: "postgres",
   dialectOptions: {
@@ -46,6 +46,17 @@ const tdf = sequelize.define(
 );
 
 module.exports = {
+  getHTML: (req, res) => {
+    res.sendFile(path.join(__dirname, "../public/index.html"));
+  },
+
+  getCSS: (req, res) => {
+    res.sendFile(path.join(__dirname, "../public/index.css"));
+  },
+
+  getJS: (req, res) => {
+    res.sendFile(path.join(__dirname, "../public/index.js"));
+  },
   getStage: (req, res) => {
     console.log(req.query);
     const stage = req.query.stage;
