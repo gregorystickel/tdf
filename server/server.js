@@ -2,7 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const app = express();
-const { SERVER_PORT } = process.env || 4000;
+const { SERVER_PORT } = process.env;
 const {
   getStage,
   getRider,
