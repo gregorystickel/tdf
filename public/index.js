@@ -1,7 +1,7 @@
 function createStageCard(stage, year) {
   console.log(stage, year);
   axios
-    .get("http://localhost:4000/api/stage", {
+    .get("/api/stage", {
       params: { stage: stage, year: year },
     })
     .then(function (response) {
@@ -36,7 +36,7 @@ function deleteCard(event) {
 function createRiderCard(rider) {
   console.log(rider);
   axios
-    .get("http://localhost:4000/api/rider", { params: { rider: rider } })
+    .get("/api/rider", { params: { rider: rider } })
     .then(function (response) {
       console.log(response.data.length);
       for (let i = 0; i < response.data.length; i++) {
@@ -83,7 +83,7 @@ function createNewData(
     winner_country
   );
   axios
-    .post("http://localhost:4000/api/data", {
+    .post("/api/data", {
       stage: stage,
       year: year,
       distance: distance,
@@ -113,7 +113,7 @@ function deleteData(stage, year) {
     alert("There is an empty field!");
   } else {
     axios
-      .delete("http://localhost:4000/api/data", {
+      .delete("/api/data", {
         data: {
           stage: stage,
           year: year,
