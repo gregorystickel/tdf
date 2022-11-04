@@ -92,7 +92,7 @@ module.exports = {
         console.error("Unable to connect to the database: ", error);
       });
 
-    // })
+    
   },
 
   enterData: (req, res) => {
